@@ -28789,12 +28789,13 @@ var $ = require('jquery');
 var App = React.createClass({
     displayName: 'App',
 
+    getInitialState: function () {
+        return {
+            dots: [[1, 1], [2, 1], [2, 2], [1, 2], [10, 1], [11, 1], [11, 2], [10, 2], [1, 10], [2, 10], [2, 11], [1, 11], [10, 10], [11, 10], [11, 11], [10, 11]]
+        };
+    },
     render: function () {
-        return React.createElement(
-            'div',
-            { id: 'app' },
-            'here is the app'
-        );
+        return React.createElement('canvas', { id: 'app' });
     }
 });
 
