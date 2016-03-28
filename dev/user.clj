@@ -3,6 +3,7 @@
             [clojure.repl                 :refer [doc find-doc source]]
             [clojure.pprint               :refer [pprint]]
             [clojure.tools.namespace.repl :refer [refresh]]
+            [clojure.tools.reader.edn :as edn]
             [ml4fun.k-means        :as km]
             [ml4fun.system         :refer [new-system]]))
 
@@ -28,3 +29,6 @@
 (defn reset []
   (stop)
   (refresh :after 'user/go))
+
+(defn input [name]
+  (get (edn/read-string (slurp "etc/input.edn")) name nil))
