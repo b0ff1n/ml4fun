@@ -10,6 +10,13 @@
   (let [dist-from (partial dist n)]
     (apply min-key dist-from centers)))
 
+(defn centroid [coords]
+  (->> coords
+       (apply map +)
+       (map #(/ % (count coords)))))
+
+
+
 
 
 
@@ -21,8 +28,13 @@
 
 
 
+
+
+
 ;; (def centers [[10 1] [10 2] [11 1] [11 2]])
 ;; (def input (user/input :k-means))
 
 
 ;; (def s1 (k-means input centers))
+;; (first (vals s1))
+
