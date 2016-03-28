@@ -1,0 +1,29 @@
+{
+  "name": "ml4fun",
+  "version": "1.0.0",
+  "description": "FIXME",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/b0ff1n/ml4fun.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/b0ff1n/ml4fun/issues"
+  },
+  "homepage": "https://github.com/b0ff1n/ml4fun#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.2.0",
+    "jquery": "^2.2.2",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}

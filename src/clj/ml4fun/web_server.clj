@@ -52,7 +52,7 @@
   (context "/api/:version" [version]
     (GET "/dummy" [] (dummy)))
   (GET "/status" [] (response "ok"))
-  (GET "/" [] (redirect "/index-dev.html"))
+  (GET "/" [] (redirect "/index.html"))
   (resources "/")
   (not-found "say what?"))
 
