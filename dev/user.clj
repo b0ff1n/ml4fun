@@ -3,6 +3,7 @@
             [clojure.repl                 :refer [doc find-doc source]]
             [clojure.pprint               :refer [pprint]]
             [clojure.tools.namespace.repl :refer [refresh]]
+            [ml4fun.k-means        :as km]
             [ml4fun.system         :refer [new-system]]))
 
 (def dev-config
